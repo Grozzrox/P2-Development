@@ -137,15 +137,22 @@
 
   .navbar a {
     color: lime;
+    padding-right: 1em;
+    font-size: 1.5em;
+    transition: all 0.1s;
+  }
+
+  .navbar a:hover,
+  .navbar a:active {
+    color: white;
+    font-size: 1.75em;
   }
 
   .navbar-login {
     float: right;
   }
 
-  a,
-  a:visited,
-  a:hover {
+  a {
     color: lime;
     text-decoration: none;
   }
@@ -284,7 +291,11 @@
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-sm navbar-dark">
-  <a class="navbar-brand" href="#">DevConquer</a>
+  <a class="navbar-brand" href="#">BGE</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
   <!-- Links -->
   <ul class="navbar-nav">
@@ -299,7 +310,10 @@
     </li>
   </ul>
   <a class="navbar-login d-flex ml-auto" href="#">Login</a>
+</div>
 </nav>
+
+
 
 <div class="content" role="main">
 

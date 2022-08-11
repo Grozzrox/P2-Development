@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Brandons-Gaming-Emporium';
+
+  public isCollapsed = false;
+
+  onClick() { return !this.isCollapsed }
 }
